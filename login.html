@@ -1,24 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Login - Império do Açai</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Império do Açaí - Login</title>
 </head>
-<body>
-    <header>
-        <h1>Império do Açai</h1>
-        <form>
-            <fieldset>
+<body bgcolor="#ffffff">
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
+  <!-- NAVBAR -->
+  <table width="100%" bgcolor="#3b0764" cellpadding="14" cellspacing="0">
+    <tr>
+      <td><font color="white" size="4"><b>IMPERIO DO AÇAÍ</b></font></td>
+      <td align="right">
+        <a href="index.html"><font color="#e9d5ff">Início</font></a> &nbsp;&nbsp;
+        <a href="login.html"><font color="white"><b>Login</b></font></a>
+      </td>
+    </tr>
+  </table>
 
-                <label for="senha">Senha:</label>
-                <input type="senha" id="senha" name="senha">
+  <br><br><br>
 
-                <button type="submit">Login</button>
+  <!-- FORMULÁRIO DE LOGIN -->
+  <table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center">
 
-            </fieldset>
-        </form>
-    </body>
-</html>   
+        <table width="380" bgcolor="#f3e8ff" border="1" bordercolor="#c084fc" cellpadding="24" cellspacing="0">
+
+          <tr bgcolor="#6b21a8">
+            <td align="center">
+              <font color="white" size="5"><b>🫐 AçaíLink Amazônia</b></font><br>
+              <font color="#e9d5ff" size="2">Acesse sua conta para continuar</font>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <form method="get" action="painel.html">
+
+                <label for="email"><font color="#3b0764"><b>E-mail:</b></font></label><br>
+                <input type="email" id="email" name="email" size="38" placeholder="seu@email.com">
+                <br><br>
+
+                <label for="senha"><font color="#3b0764"><b>Senha:</b></font></label><br>
+                <input type="password" id="senha" name="senha" size="38" placeholder="Digite sua senha">
+                <br><br><br>
+
+                <table width="100%">
+                  <tr>
+                    <td align="center">
+                      <button type="submit">Entrar no Sistema</button>
+                    </td>
+                  </tr>
+                </table>
+
+              </form>
+            </td>
+          </tr>
+
+          <tr bgcolor="#3b0764">
+            <td align="center">
+              <font color="#e9d5ff" size="2">Acesso restrito a produtores cadastrados.</font>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+  <br><br><br>
+
+  <!-- RODAPÉ -->
+  <table width="100%" bgcolor="#3b0764" cellpadding="16" cellspacing="0">
+    <tr>
+      <td align="center">
+        <font color="#e9d5ff" size="2">
+          © 2025 AçaíLink Amazônia &nbsp;|&nbsp; Sistema de Rastreamento da Produção de Açaí &nbsp;|&nbsp; Baixo Amazonas, Pará
+        </font>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
