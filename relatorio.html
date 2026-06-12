@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AçaíLink Amazônia - Relatórios</title>
+</head>
+<body bgcolor="#ffffff">
+
+  <!-- NAVBAR -->
+  <table width="100%" bgcolor="#3b0764" cellpadding="14" cellspacing="0">
+    <tr>
+      <td><font color="white" size="4"><b> AçaíLink Amazônia</b></font></td>
+      <td align="right">
+        <a href="index.html"><font color="#e9d5ff">Início</font></a> &nbsp;&nbsp;
+        <a href="painel.html"><font color="#e9d5ff">Painel</font></a> &nbsp;&nbsp;
+        <a href="cadastro.html"><font color="#e9d5ff">Cadastro</font></a> &nbsp;&nbsp;
+        <a href="relatorios.html"><font color="white"><b>Relatórios</b></font></a> &nbsp;&nbsp;
+        <a href="login.html"><font color="#e9d5ff">Sair</font></a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- TÍTULO DA PÁGINA -->
+  <table width="100%" bgcolor="#6b21a8" cellpadding="20" cellspacing="0">
+    <tr>
+      <td>
+        <font color="white" size="6"><b> Relatórios</b></font><br><br>
+        <font color="#e9d5ff" size="3">"Visualize e acompanhe todos os registros de produção de açaí cadastrados na plataforma. Os dados são organizados por município, produtor e período, permitindo o monitoramento completo dos lotes desde a coleta até a entrega."</font>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- FILTROS VISUAIS (apenas visual, sem funcionalidade) -->
+  <table width="96%" align="center" cellpadding="8" cellspacing="0" bgcolor="#f3e8ff" border="1" bordercolor="#c084fc">
+    <tr>
+      <td><font color="#3b0764" size="2"><b>Período:</b></font></td>
+      <td><input type="text" value="01/06/2025" size="12"> &nbsp; até &nbsp; <input type="text" value="30/06/2025" size="12"></td>
+      <td><font color="#3b0764" size="2"><b>Município:</b></font></td>
+      <td>
+        <select>
+          <option>Todos</option>
+          <option>Santarém</option>
+          <option>Óbidos</option>
+          <option>Oriximiná</option>
+          <option>Juruti</option>
+          <option>Alenquer</option>
+        </select>
+      </td>
+      <td><font color="#3b0764" size="2"><b>Status:</b></font></td>
+      <td>
+        <select>
+          <option>Todos</option>
+          <option>Entregue</option>
+          <option>Pendente</option>
+        </select>
+      </td>
+      <td>
+        <input type="button" value="🔍 Filtrar" bgcolor="#6b21a8">
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- TABELA DE PRODUÇÃO POR MUNICÍPIO -->
+  <table width="96%" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><font color="#3b0764" size="4"><b>Produção por Município — Junho 2025</b></font></td>
+    </tr>
+    <tr><td><hr color="#6b21a8"></td></tr>
+  </table>
+
+  <br>
+
+  <table width="96%" align="center" border="1" bordercolor="#ddd" cellpadding="12" cellspacing="0">
+    <tr bgcolor="#6b21a8">
+      <td><font color="white"><b>Município</b></font></td>
+      <td><font color="white"><b>Nº de Produtores</b></font></td>
+      <td><font color="white"><b>Lotes Registrados</b></font></td>
+      <td><font color="white"><b>Volume Total (kg)</b></font></td>
+      <td><font color="white"><b>Receita Total (R$)</b></font></td>
+    </tr>
+    <tr bgcolor="#faf5ff">
+      <td>Santarém</td><td align="center">52</td><td align="center">98</td><td align="center">3.120</td><td align="center">R$ 12.480,00</td>
+    </tr>
+    <tr>
+      <td>Óbidos</td><td align="center">31</td><td align="center">64</td><td align="center">2.050</td><td align="center">R$ 8.200,00</td>
+    </tr>
+    <tr bgcolor="#faf5ff">
+      <td>Oriximiná</td><td align="center">28</td><td align="center">57</td><td align="center">1.840</td><td align="center">R$ 7.360,00</td>
+    </tr>
+    <tr>
+      <td>Juruti</td><td align="center">19</td><td align="center">42</td><td align="center">1.300</td><td align="center">R$ 5.200,00</td>
+    </tr>
+    <tr bgcolor="#faf5ff">
+      <td>Alenquer</td><td align="center">18</td><td align="center">51</td><td align="center">1.090</td><td align="center">R$ 4.360,00</td>
+    </tr>
+    <tr bgcolor="#3b0764">
+      <td><font color="white"><b>Total Geral</b></font></td>
+      <td align="center"><font color="white"><b>148</b></font></td>
+      <td align="center"><font color="white"><b>312</b></font></td>
+      <td align="center"><font color="white"><b>9.400</b></font></td>
+      <td align="center"><font color="white"><b>R$ 37.600,00</b></font></td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <!-- TABELA DETALHADA DE LOTES -->
+  <table width="96%" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><font color="#3b0764" size="4"><b>Detalhamento de Lotes Registrados</b></font></td>
+    </tr>
+    <tr><td><hr color="#6b21a8"></td></tr>
+  </table>
+
+  <br>
+
+  <table width="96%" align="center" border="1" bordercolor="#ddd" cellpadding="12" cellspacing="0">
+    <tr bgcolor="#6b21a8">
+      <td><font color="white"><b>Lote</b></font></td>
+      <td><font color="white"><b>Produtor</b></font></td>
+      <td><font color="white"><b>Município</b></font></td>
+      <td><font color="white"><b>Qtd (kg)</b></font></td>
+      <td><font color="white"><b>Valor (R$)</b></font></td>
+      <td><font color="white"><b>Data Coleta</b></font></td>
+      <td><font color="white"><b>Data Entrega</b></font></td>
+      <td><font color="white"><b>Status</b></font></td>
+    </tr>
+    <tr bgcolor="#faf5ff">
+      <td>#034</td><td>João Pereira</td><td>Santarém</td><td>320</td><td>R$ 1.280,00</td><td>08/06/2025</td><td>10/06/2025</td><td><font color="green"><b>✔ Entregue</b></font></td>
+    </tr>
+    <tr>
+      <td>#035</td><td>Maria Souza</td><td>Óbidos</td><td>210</td><td>R$ 840,00</td><td>09/06/2025</td><td>—</td><td><font color="orange"><b>⏳ Pendente</b></font></td>
+    </tr>
+    <tr bgcolor="#faf5ff">
+      <td>#033</td><td>Raimundo Costa</td><td>Oriximiná</td><td>450</td><td>R$ 1.800,00</td><td>07/06/2025</td><td>08/06/2025</td><td><font color="green"><b>✔ Entregue</b></font></td>
+    </tr>
+    <tr>
+      <td>#032</td><td>Ana Ferreira</td><td>Juruti</td><td>180</td><td>R$ 720,00</td><td>06/06/2025</td><td>—</td><td><font color="orange"><b>⏳ Pendente</b></font></td>
+    </tr>
+    <tr bgcolor="#faf5ff">
+      <td>#031</td><td>Antônio Lima</td><td>Santarém</td><td>390</td><td>R$ 1.560,00</td><td>05/06/2025</td><td>06/06/2025</td><td><font color="green"><b>✔ Entregue</b></font></td>
+    </tr>
+    <tr>
+      <td>#030</td><td>Francisca Neves</td><td>Alenquer</td><td>270</td><td>R$ 1.080,00</td><td>04/06/2025</td><td>05/06/2025</td><td><font color="green"><b>✔ Entregue</b></font></td>
+    </tr>
+    <tr bgcolor="#faf5ff">
+      <td>#029</td><td>Carlos Mendes</td><td>Monte Alegre</td><td>500</td><td>R$ 2.000,00</td><td>03/06/2025</td><td>04/06/2025</td><td><font color="green"><b>✔ Entregue</b></font></td>
+    </tr>
+    <tr>
+      <td>#028</td><td>Rosane Oliveira</td><td>Santarém</td><td>150</td><td>R$ 600,00</td><td>02/06/2025</td><td>—</td><td><font color="orange"><b>⏳ Pendente</b></font></td>
+    </tr>
+    <tr bgcolor="#faf5ff">
+      <td>#027</td><td>José Ribeiro</td><td>Óbidos</td><td>410</td><td>R$ 1.640,00</td><td>01/06/2025</td><td>02/06/2025</td><td><font color="green"><b>✔ Entregue</b></font></td>
+    </tr>
+    <tr>
+      <td>#026</td><td>Luzia Campos</td><td>Oriximiná</td><td>290</td><td>R$ 1.160,00</td><td>31/05/2025</td><td>01/06/2025</td><td><font color="green"><b>✔ Entregue</b></font></td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <!-- RODAPÉ -->
+  <table width="100%" bgcolor="#3b0764" cellpadding="16" cellspacing="0">
+    <tr>
+      <td align="center">
+        <font color="#e9d5ff" size="2">
+          © 2025 AçaíLink Amazônia &nbsp;|&nbsp; Sistema de Rastreamento da Produção de Açaí &nbsp;|&nbsp; Baixo Amazonas, Pará
+        </font>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
