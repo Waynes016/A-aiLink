@@ -1,47 +1,156 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Cadastro Link Açaí Amazônia</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>império do Açaí</title>
 </head>
-<body>
-    <header><h1>Cadastro Link Açaí Amazônia</h1></header><hr>
-    <br>
-    <form id="cadastro" method="post" action="">
-        <label for="Nome do produtor">Nome do produtor:</label>
-        <input type="text" maxlenght="10" size="20">
-        <br><br>
-        <label for="Nome da propriedade">Nome da propriedade:</label>
-        <input type="text" maxlength="10" size="20">
-        <br><br>
-        <label for="Município">Município:</label>
-        <input type="text" maxlength="10" size="20">
-        <br><br>
-        <label for="Estado">Estado:</label>
-        <input type="text" maxlength="10" size="20">
-        <br><br>
-        <label for="Área de produção">Área de produção:</label>
-        <input type="text" maxlength="10" size="20">
-        <br><br>
-        <label for="Produção anual">Produção anual:</label>
-        <input type="text" maxlength="10" size="20">
-        <br><br>
-        <label for="Tipo de produção">Tipo de produção:</label>
-        <input type="text" maxlength="10" size="20">
-        <br><br>
-        <label for="Telefone">Telefone:</label>
-        <input type="text" maxlength="10" size="20">
-        <br><br>
-        <label for="E-mail">E-mail:</label>
-        <input type="text" maxlength="10" size="20">
-        <br><br>
-        <label for="Observações">Observações:</label>
-        <input type="text" maxlength="10" size="20">
-        <br><br>
-    </form>
-     <hr>
-    <input type="Realizar Cadastro" value="Realizar Cadastro">
-    <br><br><br>
-    <input type="Concluir Cadastro" value="Concluir Cadastro">
+<body bgcolor="#ffffff">
+
+  <!-- NAVBAR -->
+  <table width="100%" bgcolor="#3b0764" cellpadding="14" cellspacing="0">
+    <tr>
+      <td><font color="white" size="4"><b>🫐 império do Açaí</b></font></td>
+      <td align="right">
+        <a href="index.html"><font color="#e9d5ff">Início</font></a> &nbsp;&nbsp;
+        <a href="painel.html"><font color="#e9d5ff">Painel</font></a> &nbsp;&nbsp;
+        <a href="cadastro.html"><font color="white"><b>Cadastro</b></font></a> &nbsp;&nbsp;
+        <a href="relatorio.html"><font color="#e9d5ff">Relatórios</font></a> &nbsp;&nbsp;
+        <a href="login.html"><font color="#e9d5ff">Sair</font></a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- CABEÇALHO -->
+  <table width="100%" bgcolor="#6b21a8" cellpadding="24" cellspacing="0">
+    <tr>
+      <td>
+        <font color="white" size="6"><b>Cadastro de Produtor</b></font><br><br>
+        <font color="#e9d5ff" size="3">
+          Preencha os dados abaixo para registrar um novo produtor de açaí na plataforma AçaíLink.
+          Todas as informações são utilizadas para rastreamento e controle da produção na região amazônica.
+        </font>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- FORMULÁRIO -->
+  <table width="60%" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><font color="#3b0764" size="4"><b>Dados do Produtor</b></font></td>
+    </tr>
+    <tr><td><hr color="#6b21a8"></td></tr>
+  </table>
+
+  <br>
+
+  <form id="cadastro" method="post" action="">
+    <table width="60%" align="center" cellpadding="10" cellspacing="0">
+
+      <tr>
+        <td width="35%"><font color="#3b0764"><b>Nome do Produtor:</b></font></td>
+        <td><input type="text" name="nome" size="40" maxlength="100" placeholder="Ex: João da Silva Pereira"></td>
+      </tr>
+
+      <tr bgcolor="#faf5ff">
+        <td><font color="#3b0764"><b>Nome da Propriedade:</b></font></td>
+        <td><input type="text" name="propriedade" size="40" maxlength="100" placeholder="Ex: Sítio Beira Rio"></td>
+      </tr>
+
+      <tr>
+        <td><font color="#3b0764"><b>Município:</b></font></td>
+        <td>
+          <select name="municipio" size="1">
+            <option value="">Selecione o município</option>
+            <option>Santarém</option>
+            <option>Óbidos</option>
+            <option>Oriximiná</option>
+            <option>Juruti</option>
+            <option>Alenquer</option>
+            <option>Monte Alegre</option>
+            <option>Outro</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr bgcolor="#faf5ff">
+        <td><font color="#3b0764"><b>Estado:</b></font></td>
+        <td>
+          <select name="estado" size="1">
+            <option value="">Selecione o estado</option>
+            <option>Pará</option>
+            <option>Amazonas</option>
+            <option>Amapá</option>
+            <option>Outro</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><font color="#3b0764"><b>Área de Produção (ha):</b></font></td>
+        <td><input type="number" name="area" size="20" min="0" placeholder="Ex: 5"></td>
+      </tr>
+
+      <tr bgcolor="#faf5ff">
+        <td><font color="#3b0764"><b>Produção Anual (kg):</b></font></td>
+        <td><input type="number" name="producao_anual" size="20" min="0" placeholder="Ex: 2000"></td>
+      </tr>
+
+      <tr>
+        <td><font color="#3b0764"><b>Tipo de Produção:</b></font></td>
+        <td>
+          <select name="tipo_producao" size="1">
+            <option value="">Selecione o tipo</option>
+            <option>Familiar</option>
+            <option>Cooperativada</option>
+            <option>Comercial</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr bgcolor="#faf5ff">
+        <td><font color="#3b0764"><b>Telefone:</b></font></td>
+        <td><input type="tel" name="telefone" size="20" maxlength="15" placeholder="Ex: (93) 99999-9999"></td>
+      </tr>
+
+      <tr>
+        <td><font color="#3b0764"><b>E-mail:</b></font></td>
+        <td><input type="email" name="email" size="40" maxlength="100" placeholder="Ex: joao@email.com"></td>
+      </tr>
+
+      <tr bgcolor="#faf5ff">
+        <td valign="top"><font color="#3b0764"><b>Observações:</b></font></td>
+        <td><textarea name="observacoes" rows="4" cols="38" placeholder="Informações adicionais sobre o produtor ou a propriedade..."></textarea></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><hr color="#6b21a8"></td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="✔ Realizar Cadastro">&nbsp;&nbsp;&nbsp;
+          <input type="reset" value="✖ Limpar Formulário">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+
+  <br><br>
+
+  <!-- RODAPÉ -->
+  <table width="100%" bgcolor="#3b0764" cellpadding="16" cellspacing="0">
+    <tr>
+      <td align="center">
+        <font color="#e9d5ff" size="2">
+          © 2025 AçaíLink Amazônia &nbsp;|&nbsp; Sistema de Rastreamento da Produção de Açaí &nbsp;|&nbsp; Baixo Amazonas, Pará
+        </font>
+      </td>
+    </tr>
+  </table>
+
 </body>
 </html>
