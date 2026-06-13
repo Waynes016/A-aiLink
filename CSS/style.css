@@ -1,0 +1,123 @@
+
+/* GERAL */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #3b0764;
+  padding: 14px 30px;
+}
+
+/* CABEÇALHO DAS PÁGINAS */
+.cabecalho {
+  background-color: #6b21a8;
+  padding: 28px 30px;
+  color: #ffffff;
+}
+
+/* CARDS */
+.card {
+  background-color: #f3e8ff;
+  border: 1px solid #c084fc;
+  padding: 20px;
+}
+
+/* TABELAS */
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #6b21a8;
+  color: #ffffff;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+table.dados tr:hover td {
+  background-color: #faf5ff;
+}
+
+/* FORMULÁRIOS */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  border: 1px solid #c084fc;
+  padding: 6px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+/* BOTÕES DE AÇÃO (submit, reset, button) */
+input[type="submit"],
+input[type="reset"],
+button {
+  background-color: #6b21a8;
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background-color: #3b0764;
+}
+
+/* BOTÕES DE DESTAQUE (Acessar / Entrar no Sistema) */
+input[type="button"] {
+  background-color: #f5c842;
+  color: #3b0764;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input[type="button"]:hover {
+  background-color: #e0b030;
+}
+
+/* RODAPÉ */
+.rodape {
+  background-color: #3b0764;
+  padding: 16px;
+  text-align: center;
+  color: #e9d5ff;
+  font-size: 0.85rem;
+}
+
+/* LINHA DIVISÓRIA */
+hr {
+  border: none;
+  border-top: 2px solid #6b21a8;
+  margin: 8px 0;
+}
